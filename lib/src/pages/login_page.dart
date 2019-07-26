@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage('https://i.pinimg.com/564x/69/ae/86/69ae866be1de7f5fd896dd97e87b65f9.jpg'),
+                image: AssetImage('assets/wallpaper.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
       left: 10.0,
       right: 10.0,
       child: Image(
-        image: NetworkImage('http://assets.stickpng.com/thumbs/58482acecef1014c0b5e4a1e.png'),
+        image: AssetImage('assets/logo.png'),
         height: 100.0,
       ),
     );
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
     return Padding(
       padding: EdgeInsets.all(16.0),
       child: TextField(
-        autofocus: true,
+        autofocus: false,
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
           border: OutlineInputBorder(
@@ -92,11 +92,6 @@ class _LoginPageState extends State<LoginPage> {
           suffixIcon: Icon( Icons.alternate_email ),
           icon: Icon( Icons.email ),
         ),
-        onChanged: ( value ) {
-          setState(() {
-           email = value; 
-          });
-        },
       ),
     );
   }
@@ -138,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
     return Padding(
       padding: EdgeInsets.all(10.0),
       child: RaisedButton(
-        child: Text('Iniciar Sesión con Facebook'),
+        child: Text('Facebook'),
         color: Colors.blue,
         textColor: Colors.white,
         shape: StadiumBorder(),
