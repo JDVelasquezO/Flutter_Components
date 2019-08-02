@@ -30,12 +30,16 @@
             "ruta" : "sliders",
             "icon" : "slider",
             "texto": "Slider"
-        }
-        ,
+        },
         {
             "ruta" : "login",
             "icon" : "login",
             "texto": "Login"
+        },
+        {
+            "ruta" : "list",
+            "icon" : "list",
+            "texto": "List"
         }
     ]
 }
